@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
+    <style>
+        body {
+            font-size: 1rem !important;
+        }
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Знакомство с Rome</h1>
+    </header>
+
+
+    <section class="slide">
+        <img src="./rome.png" />
+        <h1>Rome</h1>
+        <p>
+            Sebastian McKenzie - создатель Yarn, Babel, член команды React Native, работал над “all-in-one” решением для JavaScript и TypeScript разработки.
+            Rome - “all roads lead to Rome”
+        </p>
+    </section>
+
+    <section class="slide">
+        <h1>Зачем, почему, кто такой ?</h1>
+        <p>
+            Rome - линтер, компилятор, сборщик, "остальное" для JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.
+            ОРазрабатывается как единая замена Babel, ESLint, webpack, Prettier, Jest, другое.
+            
+        </p>
+        <p>Rome представляет собой с нуля реализацию полной цепочки инструментов javascript.</p>
+    </section>
+
+    <section class="slide">
+        <p>
+            Rome написан на TypeScript и крутиться на Node.js.
+        </p>
+    </section>
+
+    <section class="slide">
+        <img src="./dev_status.png" />
+    </section>
+
+
+    <section class="slide">
+        <img src="./lang_support.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Первый старт</h2>
+        <img src="./start.png" />
+    </section>
+
+    <section class="slide">
+        <h2>Первая проблема</h2>
+        <img src="./node_v.png" />
+    </section>
+
+    <section class="slide">
+        <p>Node.js version - 12.5.0+</p>
+        <img src="./num_sep.png" style="object-fit: contain; display: block;height: 90%;width: 100%;" />
+    </section>
+
+    <section class="slide">
+        <h2>Первый старт v0.0.2</h2>
+        <img src="./init_lic_error.png" style="object-fit: contain; display: block;height: 90%;width: 100%;" />
+    </section>
+
+    <section class="slide">
+        <h2>Поиск пробем на github</h2>
+        <img src="./issue_1.png" style="object-fit: contain; display: block;height: 90%;width: 100%;" />
+    </section>
+
+    <section class="slide">
+        <h2>rome.rjson</h2>
+        <img src="./issue_2.png" style="object-fit: contain; display: block;height: 40%;width: 100%;" />
+        <img src="./issue_3.png" style="object-fit: contain; display: block;height: 30%;width: 100%;" />
+    </section>
+
+    <section class="slide">
+        <img src="./issue_44.png" style="object-fit: contain; display: block;height: 90%;width: 100%;" />
+    </section>
+
+    <section class="slide">
+        <div style="display:flex; height:100%;width:100%;">
+            <img src="./issue_455.png" style="object-fit: contain; display: block;height: 80%;width: 70%;" />
+            <img src="./issue_46.png" style="object-fit: contain; display: block;height: auto;width: 70%;" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CdqMZ_s7Y6k?controls=0&autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="slide">
+        <h2>Второй старт v0.0.1</h2>
+        <img src="./new_init.png" style="object-fit: contain; display: block;height: 30%;width: 100%;" />
+        <img src="./new_init_2.png" style="object-fit: contain; display: block;height: 45%;width: 100%;" />
+    </section>
+
+    <section class="slide">
+        <p>Возможности Rome JSON:</p>
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+            <img src="./rjson_1.png" style="object-fit: contain; display: block;height: 15%;width: 30%;" />
+            <img src="./rjson_2.png" style="object-fit: contain; display: block;height: 15%;width: 30%;" />
+            <img src="./rjson_3.png" style="object-fit: contain; display: block;height: 15%;width: 30%;" />
+            <img src="./rjson_4.png" style="object-fit: contain; display: block;height: 15%;width: 30%;" />
+            <img src="./rjson_5.png" style="object-fit: contain; display: block;height: 15%;width: 30%;" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <p>Linter - выглядит как конфетка</p>
+        <div style="height: 100%;width: 100%;">
+            <img src="./linter1.png" style="object-fit: contain; display: block;height: 100%;width: 100%;" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <p>Команды:</p>
+        <ul>
+            <li>rome check</li>
+            <li>rome check --apply</li>
+            <li>rome check --review</li>
+            <li>rome check --format-only</li>
+            <li>rome check src/App.jsx</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <div style="height: 100%;width: 100%;">
+            <img src="./lint1.png" style="object-fit: contain; display: block;height: 100%;width: 100%;" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <span>Проблемы: </ы>
+        <ul style="font-size: 1rem">
+            <li>нужно добавлять “type”: “module” в “package.json”</li>
+            <li>не парсит jsx из коробки, нужно использовать jsx, tsx расширение файлов. если меняем расширение файла js -> jsx сборщик не видит нужный файл</li>
+            <li>не распознает тесты</li>
+            <li>сырая документация</li>
+        </ul>
+        <div style="height: 100%;width: 100%;">
+            <img src="./lint_er1.png" style="object-fit: contain; display: block;height: 50%;width: 100%;" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <div style="height: 100%;width: 100%;">
+            <img src="./lint_er2.png" style="object-fit: contain; display: block;height: 80%;width: 100%;" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h1>Достоинства:</h1>
+        <ul>
+            <li>удобное и информативное CLI</li>
+        </ul>
+        <img src="./wonka.jpg" style="object-fit: contain; display: block;margin: auto;" />
+    </section>
+
+
+    <section class="slide">
+        <h3>Linter в процессе</h3>
+        <div style="height: 60%;width: 100%;">
+            <img src="./linter_2.png" style="object-fit: contain; display: block;height: 100%;width: 100%;" />
+        </div>
+        <p>если, мы выберем do nothing -> просто перейдем к следующему пункту</p>
+    </section>
+
+    <section class="slide">
+        <div style="height: 60%;width: 100%;">
+            <img src="./linter_3.png" style="object-fit: contain; display: block;height: 100%;width: 100%;" />
+        </div>
+        <p>вверху мы видим кол-во оставшихся issues</p>
+        <p>при выборе первого пункта, линтер просто добавит игнор коммент</p>
+        <code>// rome-ignore lint/js/useFunctionDeclarations</code>
+        <p>можно самому прописывать игнор комменты</p>
+    </section>
+
+    <section class="slide">
+        <div style="height: 60%;width: 100%;">
+            <img src="./ts_meme.jpg" style="object-fit: contain; display: block;height: 100%;width: 100%;" />
+        </div>
+        <p>есть плюшки и для любителей ts</p>
+        <code>// rome-ignore lint/js/noExplicitAny</code>
+    </section>
+
+    <section class="slide">
+        <img src="./final.png" style="object-fit: contain; display: block;height: 50%;width: 50%;margin: auto" />
+    </section>
+
+    <section class="slide">
+        <h3 style="text-align: center;">ENDGAME</h3>
+        <img src="./final2.png" style="object-fit: contain; display: block;height: 50%;width: 100%;" />
+    </section>
+
+
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
